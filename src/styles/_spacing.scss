@@ -1,0 +1,43 @@
+// spacing, paddings, margins
+
+// spacing margin
+@mixin viewport-percentage-margin($direction , $space-distance) {
+
+    @if ($direction == 'top'){
+      margin-top: ($space-distance*8) + px;  /* The Fallback */
+      margin-top: ($space-distance) + vh;
+    }
+    @else if ($direction == 'bottom'){
+      margin-bottom: ($space-distance*8) + px;  /* The Fallback */
+      margin-bottom: ($space-distance) + vh;
+    }
+    @else if ($direction == 'left'){
+      margin-left: ($space-distance*8) + px;  /* The Fallback */
+      margin-left: ($space-distance) + vw;
+    }
+    @else if ($direction == 'right'){
+      margin-right: ($space-distance*8) + px;  /* The Fallback */
+      margin-right: ($space-distance) + vw;
+    }
+  }
+
+  
+@mixin viewport-percentage-padding($direction , $space-distance) {
+
+    @if ($direction == 'top'){
+      padding-top: ($space-distance*8) + px;  /* The Fallback */
+      padding-top: ($space-distance) + vh;
+    }
+    @else if ($direction == 'bottom'){
+      padding-bottom: ($space-distance*8) + px;  /* The Fallback */
+      padding-bottom: ($space-distance) + vh;
+    }
+    @else if ($direction == 'left'){
+      padding-left: ($space-distance*8) + px;  /* The Fallback */
+      padding-left: ($space-distance) + vw;
+    }
+    @else if ($direction == 'right'){
+      padding-right: ($space-distance*8) + px;  /* The Fallback */
+      padding-right: ($space-distance) + vw;
+    }
+  }
